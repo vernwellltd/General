@@ -25,7 +25,7 @@
   --radius-lg:   12px;
   --shadow:      0 2px 12px rgba(30,42,50,0.07);
   --shadow-lg:   0 8px 32px rgba(30,42,50,0.11);
-  --nav-h:       68px;
+  --nav-h:       80px;
   --t:           all 0.22s ease;
 }
 
@@ -88,7 +88,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-.nav-logo img { height: 34px; width: auto; display: block; }
+.nav-logo img { height: 48px; width: auto; display: block; }
 .nav-links {
   display: flex;
   align-items: center;
@@ -96,7 +96,7 @@ nav {
   list-style: none;
 }
 .nav-links a {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--text-mid);
   transition: color 0.2s;
@@ -121,9 +121,9 @@ nav {
 .nav-cta {
   background: var(--slate) !important;
   color: var(--white) !important;
-  padding: 9px 20px;
+  padding: 10px 22px;
   border-radius: var(--radius);
-  font-size: 13px !important;
+  font-size: 14px !important;
   font-weight: 500 !important;
   transition: background 0.2s !important;
 }
