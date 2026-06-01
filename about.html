@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | James Eyles ACMA — Vernwell Ltd</title>
+<meta name="description" content="James Eyles ACMA — CIMA-qualified commercial and technology leader. Former IT Director at Plumbworld. Founder of Vernwell Ltd, a BI and AI automation consultancy based in Malvern.">
+<link rel="canonical" href="https://www.vernwell.co.uk/about.html">
+<link rel="stylesheet" href="style.css">
+<style>
+.about-lead {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 72px;
+  align-items: start;
+}
+.about-photo-wrap {
+  position: sticky;
+  top: calc(var(--nav-h) + 24px);
+}
+.about-photo-wrap img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  display: block;
+  box-shadow: var(--shadow-lg);
+}
+.about-photo-name {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: var(--slate-pale);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.about-photo-name h4 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--slate-dark);
+  margin-bottom: 4px;
+}
+.about-photo-name p {
+  font-size: 12px;
+  color: var(--text-light);
+  margin-bottom: 14px;
+}
+.about-photo-name a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--slate);
+  padding: 8px 14px;
+  border: 1px solid var(--border-med);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+.about-photo-name a:hover {
+  background: var(--slate);
+  color: var(--white);
+  border-color: var(--slate);
+}
+.about-photo-name a svg { width: 15px; height: 15px; fill: currentColor; }
+
+.about-body h2 { margin-bottom: 8px; }
+.about-body p { margin-bottom: 20px; }
+.about-body h3 { margin: 40px 0 12px; color: var(--slate-dark); }
+
+.timeline {
+  border-left: 2px solid var(--border);
+  padding-left: 28px;
+  margin: 24px 0 36px;
+  position: relative;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 28px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -35px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--slate);
+  border: 2px solid var(--white);
+  box-shadow: 0 0 0 2px var(--border-med);
+}
+.timeline-year {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+.timeline-title { font-size: 15px; font-weight: 600; color: var(--slate-dark); margin-bottom: 4px; font-family: 'DM Sans', sans-serif; }
+.timeline-desc { font-size: 14px; color: var(--text-mid); line-height: 1.65; }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+.skill-item {
+  padding: 12px 16px;
+  background: var(--slate-pale);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--slate-mid);
+  text-align: center;
+}
+
+.approach-block {
+  background: var(--slate-deep);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  margin: 36px 0;
+  position: relative;
+  overflow: hidden;
+}
+.approach-block::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: rgba(200,160,85,0.06);
+  pointer-events: none;
+}
+.approach-block h3 { color: var(--white); margin-bottom: 16px; }
+.approach-block p { color: rgba(255,255,255,0.55); font-size: 14px; line-height: 1.8; margin-bottom: 14px; }
+.approach-block p:last-child { margin-bottom: 0; }
+
+@media (max-width: 900px) {
+  .about-lead { grid-template-columns: 1fr; gap: 36px; }
+  .about-photo-wrap { position: static; max-width: 280px; }
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<script src="nav.js"></script>
+<script>document.write(getNavHTML('about'));</script>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="eyebrow">About Vernwell</span>
+    <h1>About James</h1>
+    <p>CIMA-qualified commercial and technology leader. Founder of Vernwell Ltd.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="about-lead">
+      <div class="about-photo-wrap fade-up">
+        <img src="images/james.jpg" alt="James Eyles ACMA — Founder, Vernwell Ltd">
+        <div class="about-photo-name">
+          <h4>James Eyles ACMA</h4>
+          <p>Founder &amp; Principal Consultant, Vernwell Ltd<br>Malvern, Worcestershire</p>
+          <a href="https://uk.linkedin.com/in/james-eyles-acma-44282033" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="about-body fade-up" style="transition-delay:0.15s">
+        <span class="eyebrow">Background</span>
+        <h2>Where Finance Meets Technology</h2>
+        <div class="divider"></div>
+        <p>Vernwell is a flexible consultancy founded to bridge the gap between commercial strategy and technical execution — the space where most business problems actually live.</p>
+        <p>James is a CIMA-qualified commercial and technology leader with over 15 years of experience working at the intersection of finance, IT, and business operations. His background combines the financial rigour of a qualified management accountant with the hands-on technical depth of someone who has built and run data infrastructure in a fast-moving commercial environment.</p>
+
+        <h3>Career Background</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">Founded 2022</div>
+            <div class="timeline-title">Vernwell Ltd — Founder &amp; Principal Consultant</div>
+            <div class="timeline-desc">Working with SMEs and PE-backed businesses on BI, AI automation, data strategy and interim IT leadership. Clients across the Midlands, London, and remote UK-wide.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">Prior role</div>
+            <div class="timeline-title">IT Director — Plumbworld (Online Home Retail)</div>
+            <div class="timeline-desc">Part of the PE-backed MBO team that scaled Online Home Retail significantly before a successful exit to Highbourne Group. Responsible for technology strategy, systems infrastructure, data and reporting, and IT leadership at board level.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">Qualification</div>
+            <div class="timeline-title">ACMA — Chartered Institute of Management Accountants</div>
+            <div class="timeline-desc">CIMA-qualified management accountant. Brings financial rigour and commercial thinking to technology and data work — a combination that is rare in BI and IT consulting.</div>
+          </div>
+        </div>
+
+        <h3>Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-item">SQL Server</div>
+          <div class="skill-item">Tableau</div>
+          <div class="skill-item">Power BI</div>
+          <div class="skill-item">BigQuery</div>
+          <div class="skill-item">Make.com</div>
+          <div class="skill-item">Zapier</div>
+          <div class="skill-item">OpenAI API</div>
+          <div class="skill-item">Relevance AI</div>
+          <div class="skill-item">Voiceflow</div>
+          <div class="skill-item">Node.js</div>
+          <div class="skill-item">Google Ads API</div>
+          <div class="skill-item">GA4 / Analytics</div>
+        </div>
+
+        <div class="approach-block">
+          <h3>How Vernwell Works</h3>
+          <p>Vernwell operates on a flexible basis — project work, day rate, or retained support, depending on what the client actually needs. There is no minimum engagement size and no overhead-heavy team: you work with James directly, which means decisions get made quickly and work gets done without layers of account management in the way.</p>
+          <p>The approach is commercial first. Technology and data are means, not ends — the question is always what decision or outcome the business is trying to support, and the work is designed around that.</p>
+        </div>
+
+        <h3>Based in Malvern, Working Across the UK</h3>
+        <p>Vernwell is based in Malvern, Worcestershire, and works with clients across the Midlands and London. The majority of work is conducted remotely, with on-site visits where the engagement or the client requires it.</p>
+        <div style="margin-top:28px; display:flex; gap:14px; flex-wrap:wrap">
+          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+          <a href="services.html" class="btn btn-outline">View Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.write(getFooterHTML());
+  initNav();
+</script>
+</body>
+</html>
