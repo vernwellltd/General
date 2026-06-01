@@ -3,392 +3,265 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vernwell Ltd | BI & AI Automation Consultancy | Malvern</title>
-<meta name="description" content="BI and AI automation consultancy for SMEs and PE-backed businesses. Reporting, dashboards, SQL, data strategy. CIMA-qualified. Board-level experience. Malvern & London.">
-<link rel="canonical" href="https://www.vernwell.co.uk/">
+<title>Contact | Vernwell Ltd</title>
+<meta name="description" content="Get in touch with Vernwell Ltd. Talk to James Eyles about BI, AI automation, data strategy or interim IT leadership for your business.">
+<link rel="canonical" href="https://www.vernwell.co.uk/contact.html">
 <link rel="stylesheet" href="style.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "name": "Vernwell Ltd",
-      "url": "https://www.vernwell.co.uk",
-      "description": "Business intelligence and AI automation consultancy for SMEs and PE-backed businesses.",
-      "telephone": "07788258843",
-      "email": "james.eyles@vernwell.co.uk",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "The Hermitage, Westminster Bank",
-        "addressLocality": "Malvern",
-        "addressRegion": "Worcestershire",
-        "postalCode": "WR14 4BN",
-        "addressCountry": "GB"
-      },
-      "areaServed": ["United Kingdom","Midlands","London","Worcestershire"],
-      "sameAs": ["https://uk.linkedin.com/in/james-eyles-acma-44282033"]
-    },
-    {
-      "@type": "Person",
-      "name": "James Eyles",
-      "honorificSuffix": "ACMA",
-      "jobTitle": "Founder and Principal Consultant",
-      "worksFor": {"@type": "Organization", "name": "Vernwell Ltd"},
-      "url": "https://www.vernwell.co.uk/about.html",
-      "sameAs": ["https://uk.linkedin.com/in/james-eyles-acma-44282033"],
-      "knowsAbout": ["Business Intelligence","Data Strategy","AI Automation","SQL Server","Tableau","Power BI","Make.com","Management Reporting","Interim IT Leadership"]
-    }
-  ]
-}
-</script>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
 <style>
-/* ---- HERO ---- */
-.hero {
-  min-height: 100vh;
-  background: var(--slate-deep);
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  padding-top: var(--nav-h);
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 60% 70% at 85% 40%, rgba(200,160,85,0.07) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 60% at 15% 70%, rgba(200,221,232,0.05) 0%, transparent 55%);
-  pointer-events: none;
-}
-.hero-grid-lines {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
-  background-size: 80px 80px;
-  pointer-events: none;
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 680px;
-  padding: 80px 0;
-}
-.hero h1 {
-  color: var(--white);
-  margin-bottom: 24px;
-  font-weight: 400;
-}
-.hero h1 em {
-  font-style: italic;
-  color: rgba(255,255,255,0.55);
-}
-.hero-sub {
-  font-size: 1.05rem;
-  color: rgba(255,255,255,0.55);
-  max-width: 520px;
-  margin-bottom: 40px;
-  line-height: 1.8;
-}
-.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-.hero-badge {
-  margin-top: 56px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.hero-badge-item {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.28);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.hero-badge-item::before {
-  content: '';
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--gold);
-  opacity: 0.7;
-}
-.hero-badge-item:first-child::before { display: none; }
-
-/* ---- SERVICES GRID ---- */
-.services-grid {
+.contact-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 72px;
+  align-items: start;
 }
-.service-card {
+.contact-info h2 { margin-bottom: 8px; }
+.contact-info > p { margin-bottom: 32px; }
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+.contact-detail:first-of-type { border-top: 1px solid var(--border); }
+.contact-detail-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--slate-tint);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--slate);
+}
+.contact-detail-icon svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.contact-detail-body { flex: 1; }
+.contact-detail-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-light); margin-bottom: 4px; }
+.contact-detail-value { font-size: 15px; font-weight: 500; color: var(--slate-dark); }
+.contact-detail-value a { color: var(--slate-dark); transition: color 0.2s; }
+.contact-detail-value a:hover { color: var(--gold); }
+
+.response-note {
+  margin-top: 28px;
+  padding: 16px 20px;
+  background: var(--slate-pale);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.65;
+}
+
+/* FORM */
+.contact-form-wrap {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 36px 32px;
-  transition: var(--transition);
-  position: relative;
-  overflow: hidden;
+  padding: 40px 36px;
+  box-shadow: var(--shadow);
 }
-.service-card::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 3px;
-  background: var(--slate);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-.service-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-3px);
-  border-color: var(--border-med);
-}
-.service-card:hover::after { transform: scaleX(1); }
-.service-num {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 3rem;
-  font-weight: 400;
-  color: var(--slate-tint);
-  line-height: 1;
-  margin-bottom: 16px;
-}
-.service-card h3 { margin-bottom: 12px; color: var(--slate-dark); }
-.service-card p { font-size: 14px; }
-.service-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--slate);
-  margin-top: 20px;
-  transition: gap 0.2s;
-}
-.service-link:hover { gap: 10px; }
+.contact-form-wrap h3 { margin-bottom: 6px; }
+.contact-form-wrap > p { font-size: 14px; margin-bottom: 28px; }
 
-/* ---- ABOUT STRIP ---- */
-.about-strip {
-  background: var(--slate-pale);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-.about-strip-inner {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 60px;
-  align-items: center;
-}
-.about-strip-photo {
-  position: relative;
-}
-.about-strip-photo img {
-  width: 100%;
-  aspect-ratio: 4/5;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: var(--radius-lg);
+.form-group { margin-bottom: 20px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group label {
   display: block;
-}
-.about-strip-photo::after {
-  content: '';
-  position: absolute;
-  inset: -8px -8px 8px 8px;
-  border: 2px solid var(--border-med);
-  border-radius: var(--radius-lg);
-  pointer-events: none;
-  z-index: 0;
-}
-.about-strip-photo img { position: relative; z-index: 1; }
-.about-strip-text h2 { margin-bottom: 8px; }
-.about-strip-text p { margin-bottom: 16px; }
-.creds {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin: 24px 0 32px;
-}
-.cred {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 5px 12px;
-  border-radius: 20px;
-  background: var(--slate-tint);
-  color: var(--slate-mid);
-  border: 1px solid var(--border-med);
+  color: var(--text-mid);
+  margin-bottom: 7px;
 }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  -webkit-appearance: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--slate);
+  box-shadow: 0 0 0 3px rgba(61,79,94,0.08);
+}
+.form-group textarea { resize: vertical; min-height: 130px; }
+.form-group select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237a96a8' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; cursor: pointer; }
 
-/* ---- CTA SECTION ---- */
-.cta-section {
-  background: var(--slate-deep);
-  position: relative;
-  overflow: hidden;
-}
-.cta-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse 60% 80% at 60% 50%, rgba(200,160,85,0.07) 0%, transparent 65%);
-  pointer-events: none;
-}
-.cta-inner {
-  position: relative;
-  z-index: 2;
+.form-submit { width: 100%; padding: 14px; font-size: 15px; font-weight: 500; margin-top: 8px; }
+
+.form-success {
+  display: none;
   text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
+  padding: 40px 20px;
 }
-.cta-inner h2 { color: var(--white); margin-bottom: 16px; }
-.cta-inner p { color: rgba(255,255,255,0.5); margin-bottom: 36px; font-size: 1.02rem; }
-.cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.form-success-icon {
+  width: 56px; height: 56px;
+  background: #e8f5ee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+.form-success-icon svg { width: 24px; height: 24px; stroke: #1a7a4a; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.form-success h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; margin-bottom: 8px; }
+.form-success p { font-size: 14px; color: var(--text-mid); }
 
 @media (max-width: 768px) {
-  .services-grid { grid-template-columns: 1fr; }
-  .about-strip-inner { grid-template-columns: 1fr; gap: 36px; }
-  .about-strip-photo { max-width: 280px; margin: 0 auto; }
-  .about-strip-photo::after { display: none; }
-  .hero-content { padding: 60px 0; }
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .form-row { grid-template-columns: 1fr; }
+  .contact-form-wrap { padding: 28px 24px; }
 }
 </style>
 </head>
 <body>
 
 <script src="nav.js"></script>
-<script>
-  document.write(getNavHTML('home'));
-</script>
+<script>document.write(getNavHTML('contact'));</script>
 
-<!-- HERO -->
-<section class="hero flush">
+<div class="page-hero">
   <div class="container">
-    <div class="hero-content">
-      <span class="eyebrow">Vernwell Ltd — Malvern, Worcestershire</span>
-      <h1>Commercial Intelligence<br>for <em>Growing</em> Businesses</h1>
-      <p class="hero-sub">Helping SMEs and PE-backed businesses make better decisions through sharper reporting, clearer data, and AI-powered automation.</p>
-      <div class="hero-actions">
-        <a href="contact.html" class="btn btn-primary">Talk to James</a>
-        <a href="services.html" class="btn btn-ghost">See What We Do</a>
-      </div>
-      <div class="hero-badge">
-        <span class="hero-badge-item">CIMA Qualified</span>
-        <span class="hero-badge-item">15+ Years Experience</span>
-        <span class="hero-badge-item">150+ Dashboards Built</span>
-        <span class="hero-badge-item">£100m+ Revenue Supported</span>
-      </div>
-    </div>
-  </div>
-  <div class="hero-grid-lines"></div>
-</section>
-
-<!-- STATS BAR -->
-<div class="stats-bar">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-item fade-up">
-        <div class="stat-num">150+</div>
-        <div class="stat-label">Dashboards Built</div>
-      </div>
-      <div class="stat-item fade-up" style="transition-delay:0.1s">
-        <div class="stat-num">15+</div>
-        <div class="stat-label">Years Experience</div>
-      </div>
-      <div class="stat-item fade-up" style="transition-delay:0.2s">
-        <div class="stat-num">£100m+</div>
-        <div class="stat-label">Revenue Supported</div>
-      </div>
-      <div class="stat-item fade-up" style="transition-delay:0.3s">
-        <div class="stat-num">ACMA</div>
-        <div class="stat-label">CIMA Qualified</div>
-      </div>
-    </div>
+    <span class="eyebrow">Let's Talk</span>
+    <h1>Get in Touch</h1>
+    <p>No sales process, no obligation. A short conversation is usually enough to work out whether Vernwell can help.</p>
   </div>
 </div>
 
-<!-- SERVICES -->
 <section>
   <div class="container">
-    <div class="fade-up" style="margin-bottom:48px; max-width:560px">
-      <span class="eyebrow">What Vernwell Does</span>
-      <h2>Where Finance, Data &amp; Technology Meet</h2>
-      <div class="divider"></div>
-      <p>Vernwell works with businesses at the point where commercial decision-making and technology intersect. Practical, hands-on, without jargon.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card fade-up">
-        <div class="service-num">01</div>
-        <h3>Business Intelligence &amp; Reporting</h3>
-        <p>SQL Server, Tableau, Power BI — management dashboards that update automatically and reporting that finance and ops teams actually agree on.</p>
-        <a href="services.html#bi" class="service-link">Learn more →</a>
-      </div>
-      <div class="service-card fade-up" style="transition-delay:0.1s">
-        <div class="service-num">02</div>
-        <h3>AI Automation</h3>
-        <p>Practical workflows using Make.com, Zapier, Relevance AI and the OpenAI API — targeting the manual processes that consume the most time.</p>
-        <a href="services.html#ai" class="service-link">Learn more →</a>
-      </div>
-      <div class="service-card fade-up" style="transition-delay:0.15s">
-        <div class="service-num">03</div>
-        <h3>Data Strategy &amp; Architecture</h3>
-        <p>Database design, data modelling and tool selection advice — building infrastructure that scales and won't need replacing in two years.</p>
-        <a href="services.html#data" class="service-link">Learn more →</a>
-      </div>
-      <div class="service-card fade-up" style="transition-delay:0.2s">
-        <div class="service-num">04</div>
-        <h3>Interim IT &amp; Commercial Leadership</h3>
-        <p>Board-level IT and commercial support without the full-time overhead. Particularly suited to PE-backed businesses and growth-stage SMEs.</p>
-        <a href="services.html#interim" class="service-link">Learn more →</a>
-      </div>
-    </div>
-  </div>
-</section>
+    <div class="contact-grid">
 
-<!-- ABOUT STRIP -->
-<section class="about-strip">
-  <div class="container">
-    <div class="about-strip-inner">
-      <div class="about-strip-photo fade-up">
-        <img src="images/james.jpg" alt="James Eyles ACMA — Founder, Vernwell Ltd">
-      </div>
-      <div class="about-strip-text fade-up" style="transition-delay:0.15s">
-        <span class="eyebrow">About</span>
-        <h2>Experience That Bridges Finance, Technology &amp; Operations</h2>
+      <!-- INFO -->
+      <div class="fade-up">
+        <span class="eyebrow">Contact Details</span>
+        <h2>Talk to James Directly</h2>
         <div class="divider"></div>
-        <p>Vernwell was founded by James Eyles ACMA — a CIMA-qualified commercial and technology leader with a background scaling PE-backed retail businesses. As IT Director at Plumbworld (Online Home Retail), part of an MBO team that grew the business significantly before exiting to Highbourne Group, James understands what it means to make technology and data work at pace under commercial pressure.</p>
-        <p>That combination — financial rigour, hands-on technical delivery, and board-level perspective — is what Vernwell brings to every engagement.</p>
-        <div class="creds">
-          <span class="cred">CIMA / ACMA</span>
-          <span class="cred">SQL Server</span>
-          <span class="cred">Tableau</span>
-          <span class="cred">Power BI</span>
-          <span class="cred">Make.com</span>
-          <span class="cred">OpenAI API</span>
-        </div>
-        <a href="about.html" class="btn btn-outline">More About James</a>
-      </div>
-    </div>
-  </div>
-</section>
+        <p>You'll deal with James directly — no account managers, no handoffs. If what you're facing sounds like something Vernwell can help with, get in touch and expect a response within one working day.</p>
 
-<!-- CTA -->
-<section class="cta-section">
-  <div class="container">
-    <div class="cta-inner fade-up">
-      <span class="eyebrow" style="justify-content:center; display:block">Get Started</span>
-      <h2>Let's Talk About What You're Trying to Achieve</h2>
-      <p>No sales process, no obligation. If what you're facing sounds like something Vernwell can help with, a short conversation will tell us both fairly quickly.</p>
-      <div class="cta-actions">
-        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
-        <a href="services.html" class="btn btn-ghost">View Services</a>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact-detail-body">
+            <div class="contact-detail-label">Telephone</div>
+            <div class="contact-detail-value"><a href="tel:07788258843">07788 258843</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="contact-detail-body">
+            <div class="contact-detail-label">Email</div>
+            <div class="contact-detail-value"><a href="mailto:james.eyles@vernwell.co.uk">james.eyles@vernwell.co.uk</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-detail-body">
+            <div class="contact-detail-label">Location</div>
+            <div class="contact-detail-value">Malvern, Worcestershire<br><span style="font-size:13px;font-weight:400;color:var(--text-light)">Working across the Midlands, London &amp; remote UK-wide</span></div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div class="contact-detail-body">
+            <div class="contact-detail-label">LinkedIn</div>
+            <div class="contact-detail-value"><a href="https://uk.linkedin.com/in/james-eyles-acma-44282033" target="_blank" rel="noopener">James Eyles ACMA</a></div>
+          </div>
+        </div>
+
+        <div class="response-note">
+          <strong>Response time:</strong> All enquiries are responded to within one working day. For urgent matters, a call is always welcome.
+        </div>
       </div>
+
+      <!-- FORM -->
+      <div class="contact-form-wrap fade-up" style="transition-delay:0.15s">
+        <h3>Send a Message</h3>
+        <p>Tell me a little about what you're working on and I'll come back to you shortly.</p>
+
+        <!-- 
+          FORMSPREE SETUP:
+          1. Go to formspree.io and create a free account
+          2. Create a new form — copy the form endpoint URL
+          3. Replace YOUR_FORMSPREE_ID below with your form ID (e.g. xyzabcde)
+          The endpoint will look like: https://formspree.io/f/YOUR_FORMSPREE_ID
+        -->
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="James Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Acme Ltd">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="james@company.co.uk" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="07700 000000">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Area of Interest</label>
+            <select id="service" name="service">
+              <option value="">— Select one —</option>
+              <option value="bi">Business Intelligence &amp; Reporting</option>
+              <option value="ai">AI Automation</option>
+              <option value="data">Data Strategy &amp; Architecture</option>
+              <option value="interim">Interim IT / Commercial Leadership</option>
+              <option value="other">Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" placeholder="Tell me a bit about what you're trying to achieve or the problem you're facing..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        </form>
+
+        <div class="form-success" id="form-success">
+          <div class="form-success-icon">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h4>Message Sent</h4>
+          <p>Thanks for getting in touch. I'll be back to you within one working day.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -396,7 +269,37 @@
 <script>
   document.write(getFooterHTML());
   initNav();
-</script>
 
+  // Form handling
+  const form = document.getElementById('contact-form');
+  const success = document.getElementById('form-success');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.style.display = 'none';
+          success.style.display = 'block';
+        } else {
+          btn.textContent = 'Send Message';
+          btn.disabled = false;
+          alert('Something went wrong — please try emailing james.eyles@vernwell.co.uk directly.');
+        }
+      } catch {
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+        alert('Something went wrong — please try emailing james.eyles@vernwell.co.uk directly.');
+      }
+    });
+  }
+</script>
 </body>
 </html>
