@@ -125,6 +125,10 @@ nav {
   border-radius: var(--radius);
   font-size: 14px !important;
   font-weight: 500 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  line-height: 1 !important;
+  font-weight: 500 !important;
   transition: background 0.2s !important;
 }
 .nav-cta::after { display: none !important; }
