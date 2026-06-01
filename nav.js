@@ -38,6 +38,7 @@ function getFooterHTML() {
           <li><a href="services.html#ai">AI Automation</a></li>
           <li><a href="services.html#data">Data Strategy</a></li>
           <li><a href="services.html#interim">Interim Leadership</a></li>
+          <li><a href="services.html#cyber">Cyber Security</a></li>
         </ul>
       </div>
       <div class="footer-col">
