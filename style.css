@@ -118,9 +118,8 @@ nav {
 .nav-logo img {
   height: 44px;
   width: auto;
-  filter: brightness(0) invert(1);
+  mix-blend-mode: screen;
 }
-
 .nav-logo-text {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.5rem;

@@ -23,7 +23,7 @@ function getNavHTML(activePage) {
       </button>
       <ul class="nav-links" id="navLinks">
         ${linksHTML}
-        <li><a href="/contact/" class="nav-cta">Get in Touch</a></li>
+        
       </ul>
     </div>
   </div>
