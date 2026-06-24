@@ -16,14 +16,37 @@ function getNavHTML(activePage) {
   <div class="container">
     <div class="nav-inner">
       <a href="/" class="nav-logo">
-        <img src="/images/vernwell-logo.png" alt="Vernwell Ltd logo" onerror="this.style.display='none'">
+        <img src="/images/Vernwell_Logo.png" alt="Vernwell Ltd logo" onerror="this.style.display='none'">
         <span class="nav-logo-text">Vernwell<span>.</span></span>
       </a>
-      <ul class="nav-links">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
         ${linksHTML}
         <li><a href="/contact/" class="nav-cta">Get in Touch</a></li>
       </ul>
     </div>
   </div>
-</nav>`;
+</nav>
+<script>
+  (function() {
+    var btn = document.getElementById('navToggle');
+    var menu = document.getElementById('navLinks');
+    if (!btn || !menu) return;
+    btn.addEventListener('click', function() {
+      var open = menu.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open);
+      btn.classList.toggle('is-open', open);
+    });
+    // Close on link click
+    menu.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        menu.classList.remove('nav-open');
+        btn.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', false);
+      });
+    });
+  })();
+</script>`;
 }
