@@ -116,8 +116,9 @@ nav {
 }
 
 .nav-logo img {
-  height: 52px;
+  height: 44px;
   width: auto;
+  filter: brightness(0) invert(1);
 }
 
 .nav-logo-text {

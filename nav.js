@@ -17,7 +17,6 @@ function getNavHTML(activePage) {
     <div class="nav-inner">
       <a href="/" class="nav-logo">
         <img src="/images/Vernwell_Logo.png" alt="Vernwell Ltd logo" onerror="this.style.display='none'">
-        <span class="nav-logo-text">Vernwell<span>.</span></span>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
